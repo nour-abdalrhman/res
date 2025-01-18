@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, p {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+  }
+  
+ 
+  .navbar {
+    background-color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #d35e0b;
+  }
+  .hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('./images/bg-hero.jpg');
+     background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(233, 233, 233);
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: #ff6a00;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #7a3103;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .service-box {
+    flex: 1 1 calc(25% - 20px);
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-box i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-box h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  
+  .service-box p {
+    color: #000000;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .offers {
+    text-align: center;
+    padding: 50px 20px;
+    background-color:#b88d564f;
+  }
+  
+  .offers h2 {
+    color: #ff6a00;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .offers p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .offers .btn {
+    font-size: 1rem;
+  }
+  
+  .testimonials {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .testimonial-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-box p:first-child {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-box p:last-child {
+    color: #ff6a00;
+    font-weight: bold;
+  }
+
+
+  .reservation {
+    padding: 50px 20px;
+    background-color:#b88d564f;
+    text-align: center;
+  }
+  
+  .reservation h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .reservation form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .reservation input, .reservation button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .reservation button {
+    background-color: #ff6a00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reservation button:hover {
+    background-color: #863b0c;
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  footer .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ff6a00;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
